@@ -1,0 +1,40 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+  body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          a(href='/').brand Project name
+          .nav-collapse.collapse
+            ul.nav
+              li.active
+                a(href='#') Home
+              li
+                a(href='#about') About
+              li
+                a(href='#contact') Contact
+              li.dropdown
+                a(href='#dropdown',data-toggle='dropdown').dropdown-toggle Dropdown
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a(href='#') Action
+                  li
+                    a(href='#') Another action
+                  li
+                    a(href='#') Something else here
+                  li.divider
+                  li.nav-header Nav header
+                  li
+                    a(href='#') Separated link
+                  li
+                    a(href='#') One more separated link
+
+
+
+    block content
+    script(src='/javascripts/bootstrap.min.js')
